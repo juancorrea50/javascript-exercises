@@ -1,5 +1,5 @@
 const sumAll = function(...args) {
-    //Solution included however mine uses arrays to save information rather than simple variables -.-
+    //Solution included however mine uses arrays to save information rather than simple variables
     let sum=0;
 
     args.sort();
