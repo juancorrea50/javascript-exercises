@@ -1,20 +1,14 @@
-const removeFromArray = function() {
-    //Create variables
-    const inputArray = arguments[0];
+const removeFromArray = function(array, ...args) {
+    //Create variable
     let newArray = [];
 
-    //Scans inputArray
-    for(let x=0;x<inputArray.length;x++){
-        //Find the number to remove
-        if(x == arguments[1]){
-            //Remove the number and output the new array into newArray
-            console.log(inputArray); 
-            inputArray.splice(x-1, 1);
-            newArray = inputArray;
+    //Scans inputArray and pushes array values that aren't in args to newArray
+    array.forEach(item => {
+        if(!args.includes(item)){
+            newArray.push(item);
         }
-    }
-    //Prints and returns newArray
-    console.log(newArray);
+    });
+
     return newArray;
 
 };
