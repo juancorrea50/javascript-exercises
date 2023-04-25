@@ -21,12 +21,34 @@ const multiply = function(array) {
 
 };
 
-const power = function() {
+const power = function(...input) {
+  /* ** is the exponent operator */
+  //:Solution not used: take in input via spread operator and if there is a length input.reduce by using the first value as a base and the second as an exponent 
+  //then use operator to return the output value.
+  return input.length ? input.reduce((val1, powerVal) => val1 ** powerVal) : 0;
 	
 };
 
-const factorial = function() {
-	
+const factorial = function(val) {
+    let output=1;
+    if(val == 0){
+      return 1;
+    } 
+    for(let x=1; x <= val; val--){
+      output *= val;
+    }
+    console.log(output);
+    return output;
+
+    /*:Solution not used:
+    //With the input variable being n, the recursiveFactorial function is called and used for the recursive logic required for this challenge 
+      
+      if (n === 0) {
+        return 1;
+      }
+      
+      return n * recursiveFactorial(n - 1); 
+  */
 };
 
 // Do not edit below this line
