@@ -2,7 +2,7 @@ const fibonacci = function(num) {
     //:Solution USED: 
     if(num<0) return "OOPS";
     if(num==0) return 0;
-    //Initialize 0 and 1 as variables for gap fill of the logic.
+    //Initialize 0 and 1 for logic use.
     let numCycle =0;
     //stackVar refers to the stacking of numbers on the variable during the for loop logic
     let stackVar=1;
